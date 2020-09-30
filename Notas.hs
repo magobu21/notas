@@ -6,9 +6,9 @@
 
 notas :: Float -> Float -> Float -> String
 notas n1 n2 n3
-    | bmi <= 10.0 = "Crisis de notas, semestre perdido!!!"
-    | bmi <= 20.0 = "Alerta roja!!! hay que subir las notas"
-    | bmi <= 30.0 = "Hay que mejorar..."
-    | bmi <= 40.0 = "Vamos bien..."
+    | range <= 10.0 = "Crisis de notas, semestre perdido!!!"
+    | range <= 20.0 = "Alerta roja!!! hay que subir las notas"
+    | range <= 30.0 = "Hay que mejorar..."
+    | range <= 40.0 = "Vamos bien..."
     | otherwise   = "Vas muy bien!"
     where bmi = (n1+n2+n3)/3
