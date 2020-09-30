@@ -11,4 +11,4 @@ notas n1 n2 n3
     | range <= 30.0 = "Hay que mejorar..."
     | range <= 40.0 = "Vamos bien..."
     | otherwise   = "Vas muy bien!"
-    where bmi = (n1+n2+n3)/3
+    where range = (n1+n2+n3)/3
